@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>RegisterForHome</Name>
+    <ProjectGuid>a8fdeae7-f0c6-4e73-9f7c-31d9842d93f9</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>RegisterForHome</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="core\data\pdoData.php" />
+    <Compile Include="index.php" />
+    <Compile Include="MVC\control\ControlRegister.php" />
+    <Compile Include="MVC\model\ModelRegister.php" />
+    <Compile Include="MVC\view\RespondRegister.php" />
+    <Compile Include="RegistRequest.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="core\" />
+    <Folder Include="core\data\" />
+    <Folder Include="MVC\" />
+    <Folder Include="MVC\control\" />
+    <Folder Include="MVC\model\" />
+    <Folder Include="MVC\view\" />
+    <Folder Include="js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\orderRegist.js" />
+  </ItemGroup>
+</Project>
